@@ -2,14 +2,16 @@
   "name": "atproto-nextjs-oauth",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "pnpm migrate && next dev",
     "start": "next start",
     "lint": "eslint",
-    "migrate": "tsx scripts/migrate.ts"
+    "migrate": "tsx scripts/migrate.ts",
+    "gen-key": "tsx scripts/gen-key.ts"
   },
   "dependencies": {
-    "@atproto/oauth-client-node": "^0.5.16",
+    "@atproto/oauth-client-node": "^0.5.17",
     "better-sqlite3": "^13.2.0",
     "kysely": "^0.29.9",
     "next": "16.4.6",
