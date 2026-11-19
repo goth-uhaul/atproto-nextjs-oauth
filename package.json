@@ -7,8 +7,9 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "pnpm migrate && next dev",
-    "start": "next start",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "pnpm migrate && next start",
     "lint": "eslint",
     "migrate": "tsx scripts/migrate.ts",
     "gen-key": "tsx scripts/gen-key.ts"
