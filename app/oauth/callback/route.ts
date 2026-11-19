@@ -4,8 +4,9 @@ import { NextRequest, NextResponse } from "next/server";
 const PUBLIC_URL = process.env.PUBLIC_URL || "http://127.0.0.1:3000";
 
 export async function GET(request: NextRequest) {
+  const params = request.nextUrl.searchParams;
+
   try {
-    const params = request.nextUrl.searchParams;
     const client = await getOAuthClient();
 
     // exchange code for session
